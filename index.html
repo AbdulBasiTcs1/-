@@ -30,30 +30,33 @@
 
   <div class="container">
     <div class="card">
-      <h1>QR Code Generater</h1>
-      <p class="subtitle">Enter the text or URL to gnenerate QR code</p>
+      <h1>QR Code Generator</h1>
+      <p class="subtitle">Enter text or URL to generate QR code</p>
+
       <div class="input-section">
-        <textarea name="" id="inputText" placeholder="Enter text or URL here..." rows="4"></textarea>
+        <textarea id="inputText" placeholder="Enter text or URL here..." rows="4"></textarea>
       </div>
+
       <div class="options">
         <div class="option-group">
           <label for="size">Size:</label>
-          <select name="" id="size">
+          <select id="size">
             <option value="200">200x200</option>
-            <option value="200">300x300</option>
-            <option value="200">300x300</option>
+            <option value="300">300x300</option>
+            <option value="400">400x400</option>
           </select>
-          
-          </div>
         </div>
-        <button class="generate-btn" id="generateBtn">Generate QR Code</button>
-        <div class="qr-section" id="qrSection">
-            <div class="qr-container" id="qrContainer"></div>
-            <button class="download-btn" id="downloadBtn">Download QR Code</button>
-
       </div>
-    </div>
-  </div>
+
+      <button class="generate-btn" id="generateBtn">Generate QR Code</button>
+
+      <div class="qr-section" id="qrSection">
+        <div class="qr-container" id="qrContainer"></div>
+        <button class="download-btn" id="downloadBtn">Download QR Code</button>
+      </div>
+
+    </div>   
+  </div>     
 
 </body>
 
