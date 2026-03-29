@@ -1,11 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!--
+  This is the QR Code Generater and in which I will try to make this app.  
+-->
+
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QR Code Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+    integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- 
+        Loads the QRCode.js library from a CDN (Content Delivery Network) — a fast external server
+         - integrity → a security hash to verify the file wasn't tampered with (SRI check)
+         - crossorigin="anonymous" → allows the browser to do the SRI check safely
+         - referrerpolicy="no-referrer" → don't send our page URL when fetching this script
+        This MUST load BEFORE script.js because script.js uses the 
+        QRCode class from this library 
+    -->
+
+  <script src="script.js" defer></script>
 </head>
+
 <body>
-  
+
+  <div class="container">
+    <div class="card">
+      <h1>QR Code Generater</h1>
+      <p class="subtitle">Enter the text or URL to gnenerate QR code</p>
+      <div class="input-section">
+        <textarea name="" id="inputText" placeholder="Enter text or URL here..." rows="4"></textarea>
+      </div>
+      <div class="options">
+        <div class="option-group">
+          <label for="size">Size:</label>
+          <select name="" id="size">
+            <option value="200">200x200</option>
+            <option value="200">300x300</option>
+            <option value="200">300x300</option>
+          </select>
+          
+          </div>
+        </div>
+        <button class="generate-btn" id="generateBtn">Generate QR Code</button>
+        <div class="qr-section" id="qrSection">
+            <div class="qr-container" id="qrContainer"></div>
+            <button class="download-btn" id="downloadBtn">Download QR Code</button>
+
+      </div>
+    </div>
+  </div>
+
 </body>
+
 </html>
