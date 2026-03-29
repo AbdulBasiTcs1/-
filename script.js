@@ -1,7 +1,7 @@
 // Its time to make it working 
 
 // dom 
-const inputText = document.getElementById("inpuText");
+const inputText = document.getElementById("inputText");
 const sizeSelect = document.getElementById("size");
 const generateBtn = document.getElementById("generateBtn");
 const qrSection = document.getElementById("qrSection");
