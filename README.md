@@ -49,4 +49,4 @@ Here is a visual overview of the application:
 
 ---
 
-**Made with ❤️ by Abdul Basit**
+** Made with ❤️ by Abdul Basit **
